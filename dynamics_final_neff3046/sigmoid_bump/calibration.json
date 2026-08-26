@@ -1,0 +1,47 @@
+{
+  "omega_b": 0.022383,
+  "omega_cdm": 0.12011,
+  "omega_nu": 0.0006441915396177796,
+  "omega_m": 0.14313719153961776,
+  "omega_gamma": 2.4729792808613565e-05,
+  "T_CMB_K": 2.7255,
+  "sum_mnu_eV": 0.06,
+  "N_eff": 3.046,
+  "N_ur": 2.0328,
+  "N_ncdm_eff": 1.0131999999999999,
+  "T_ncdm_over_Tgamma": 0.71611,
+  "neutrino_convention": "CLASS-like Planck baseline, exact early-time N_eff=3.046",
+  "z_star": 1090.0,
+  "DM_cal_Mpc": 13869.57,
+  "DM_residual_scale_Mpc": 25.0,
+  "DM_scale_is_observational_sigma": false,
+  "lcdm_reference": {
+    "H0": 67.32,
+    "E0": 1.0,
+    "DM": 13869.638750330652,
+    "quad_error_Mpc": 1.2813348747027422e-06,
+    "DM_minus_cal": 0.0687503306526196
+  },
+  "blocks": {
+    "A": {
+      "sigma_a": 0.06,
+      "alpha": 0.3,
+      "phi_b": 0.1,
+      "sigma_b": 0.05
+    },
+    "B": {
+      "sigma_a": 0.06,
+      "alpha": 0.7,
+      "phi_b": 0.05,
+      "sigma_b": 0.05
+    },
+    "C": {
+      "sigma_a": 0.06,
+      "alpha": 1.0,
+      "phi_b": 0.25,
+      "sigma_b": 0.05
+    }
+  },
+  "neutrino_cache_file": "/Users/shaz/Desktop/Ben\u0303at/test_consistancy/paper/dynamics_final_neff3046/cache/massive_neutrino_table_class_neff3046_class_photon_v3.npz",
+  "acceptance_rule": "optimizer_success and cost < 1e-3 and finite positive-E2 integration and finite zt/zdagger and no fitted parameter pinned to a bound"
+}

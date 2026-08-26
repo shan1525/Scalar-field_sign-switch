@@ -1,0 +1,45 @@
+{
+  "mock_csv": "/Users/shaz/Desktop/shan/Current_work/runs_new_corrected/sign_switch/sscdm/simulated_from_csv.csv",
+  "field_interval": [
+    0.0,
+    0.23
+  ],
+  "grid_points": 1000,
+  "quantile_method": "direct weighted equal-tail quantiles",
+  "weights_applied": "exactly once",
+  "resampling_draws": 0,
+  "resampling_rng_seed": null,
+  "display_smoothing_sigma_grid_cells": 0.0,
+  "models": {
+    "SigmoidBump": {
+      "posterior_csv": "/Users/shaz/Desktop/shan/Current_work/runs_new_corrected/sign_switch/sscdm/SigmoidBump/posterior.csv",
+      "posterior_samples": 67341,
+      "nesting_before_enforcement": true,
+      "nesting_after_enforcement": true
+    },
+    "AxionLikeOffset": {
+      "posterior_csv": "/Users/shaz/Desktop/shan/Current_work/runs_new_corrected/sign_switch/sscdm/AxionLikeOffset/posterior.csv",
+      "posterior_samples": 219635,
+      "nesting_before_enforcement": true,
+      "nesting_after_enforcement": true
+    },
+    "ShiftedTanh": {
+      "posterior_csv": "/Users/shaz/Desktop/shan/Current_work/runs_new_corrected/sign_switch/sscdm/ShiftedTanh/posterior.csv",
+      "posterior_samples": 252960,
+      "nesting_before_enforcement": true,
+      "nesting_after_enforcement": true
+    },
+    "InvertedQuadratic": {
+      "posterior_csv": "/Users/shaz/Desktop/shan/Current_work/runs_new_corrected/sign_switch/sscdm/InvertedQuadratic/posterior.csv",
+      "posterior_samples": 345876,
+      "nesting_before_enforcement": true,
+      "nesting_after_enforcement": true
+    },
+    "GaussianBump": {
+      "posterior_csv": "/Users/shaz/Desktop/shan/Current_work/runs_new_corrected/sign_switch/sscdm/GaussianBump/posterior.csv",
+      "posterior_samples": 15658,
+      "nesting_before_enforcement": true,
+      "nesting_after_enforcement": true
+    }
+  }
+}

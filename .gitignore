@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Superseded ECDM run retained only in the local workspace copy.
+runs_new_corrected/sign_switch/ecdm_old/
+
+# Large, redundant UltraNest internals. Compact posterior arrays, summaries,
+# evidence files, diagnostic tables, and final figures remain tracked.
+**/chains/run.txt
+**/chains/weighted_post.txt
+**/chains/weighted_post_untransformed.txt
+**/chains/equal_weighted_post.txt
+**/results/points.hdf5
+**/debug.log
+**/extra/sampling-stuck-*
+
