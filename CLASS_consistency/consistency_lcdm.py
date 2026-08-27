@@ -53,12 +53,7 @@ print(f"omega_ncdm returned      = {omega_ncdm_class:.12e}")
 print(f"omega_m returned         = {omega_m_class:.12e}")
 print(f"omega_gamma_CLASS = {omega_gamma_class:.16e}")
 
-if not np.isclose(
-    omega_ncdm_class,
-    omega_ncdm_requested,
-    rtol=1e-8,
-    atol=1e-12,
-):
+if not np.isclose(omega_ncdm_class,omega_ncdm_requested,rtol=1e-8,atol=1e-12,):
     raise RuntimeError(
         "CLASS massive-neutrino density does not match the requested "
         "omega_ncdm normalization."
@@ -82,7 +77,7 @@ z = np.unique(np.concatenate([
 H_class = np.interp(z, z_class, H_class_mpc)
 E_class = H_class / np.interp(0.0, z_class, H_class_mpc)
 
-# Your independent Lambda-CDM calculation.
+# Independent Lambda-CDM calculation.
 h2 = (H0 / 100.0)**2
 omega_de = (
     h2
@@ -103,9 +98,7 @@ DM_class = np.interp(z_max, z_class, chi_class)
 
 # Distance obtained by integrating our E(z).
 DM_integrand = c_km_s / (H0 * E_ours)
-DM_ours_grid = cumulative_trapezoid(
-    DM_integrand, z, initial=0.0
-)
+DM_ours_grid = cumulative_trapezoid(DM_integrand, z, initial=0.0)
 DM_ours = DM_ours_grid[-1]
 
 # Also retain the higher-accuracy distance from the existing routine.
